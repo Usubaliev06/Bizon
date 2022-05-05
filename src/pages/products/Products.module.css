@@ -1,0 +1,30 @@
+
+.header_2 {
+    margin-top: -140px;
+    width: 40%;
+    height: 100px;
+    height: 450px;
+    width: 100%;
+    background-image: url('https://downloader.disk.yandex.ru/preview/538e94f4d22169b1658278274848ccbbd9ea89829e2b5bf6a6046e1505ea477f/62706298/refUspvXM61_6vF5IKZUizx1xXji9KunwGfLoyW5evkWfs0eGB-r2UF6K4qHWgS72pHrMGSeWVHdc0aU8VC6uw%3D%3D?uid=0&filename=CHI_7152.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1771x1330&crop=1');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid rgb(220, 181, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header_2_p1 {
+    color: rgb(252, 251, 247);
+    font-size: 38px;
+    letter-spacing: 0.3em;
+}
+
+#header_2_p2 {
+    color: white;
+    font-size: 60px;
+    background-color: rgba(5, 7, 7, 0.485);
+    border-radius: 10px;
+    letter-spacing: 0.3em;
+}
