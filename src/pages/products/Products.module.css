@@ -1,4 +1,3 @@
-
 .header_2 {
     margin-top: -140px;
     width: 40%;
@@ -19,6 +18,7 @@
     color: rgb(252, 251, 247);
     font-size: 38px;
     letter-spacing: 0.3em;
+
 }
 
 #header_2_p2 {
@@ -27,4 +27,101 @@
     background-color: rgba(5, 7, 7, 0.485);
     border-radius: 10px;
     letter-spacing: 0.3em;
+
+
+}
+
+
+.block1 {
+    height: auto;
+    background-image: url("https://images.wallpaperscraft.ru/image/single/derevyannyj_poverkhnost_tekstura_doski_118443_3840x2160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block1>p {
+    font-size: 27px;
+    color: white;
+    margin-left: 10px;
+
+}
+
+.block1>h1 {
+    text-align: center;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+   
+
+}
+
+.sort_1 {
+    height: auto;
+    width: 45%;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.589);
+    
+}
+
+.sort_1>img {
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+
+}
+
+.sort_1>p {
+    width: 60%;
+    font-size: 21px;
+   
+}
+
+.price {
+    margin-bottom: -5px;
+}
+
+.price>img {
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width:512px) {
+    .sort_1>p {
+        width: 100%;
+    }
+
+    .sort_1 {
+        width: 80%;
+    }
+
+    .sort_1>img {
+        margin-bottom: 10px;
+    }
+
+    .header_2 {
+        width: auto;
+        text-align: center;
+        padding-top: 130px;
+
+    }
+
+    #header_2_p2 {
+        letter-spacing: 0.1em;
+    }
 }

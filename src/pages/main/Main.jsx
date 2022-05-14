@@ -1,5 +1,6 @@
 import React from 'react'
 import css from './Main.module.css'
+import stock from './../../img/stock.PNG'
 
 
 
@@ -10,16 +11,16 @@ export default function Main() {
 
 
       <main>
-      
-      <div className={css.header_2}>
-                    <p id={css.header_2_p1}>
-                        Пивоварня "BIZON"
-                    </p>
-                    <p  id={css.header_2_p2}>
-                        НОВЫЕ ГРАНИ ВКУСА
-                    </p>
-                </div>
-            
+
+        <div className={css.header_2}>
+          <p id={css.header_2_p1}>
+            Пивоварня "BIZON"
+          </p>
+          <p id={css.header_2_p2}>
+            НОВЫЕ ГРАНИ ВКУСА
+          </p>
+        </div>
+
 
         <div className={css.made_beer}>
 
@@ -79,7 +80,19 @@ export default function Main() {
 
           </div>
 
+          <div className={css.stock}>
+            <h1>Акции</h1>
 
+            <div className={css.stock_blocks_wrapper}>
+
+            <div className={css.stock_blocks} >
+              <img src={stock} alt="" />
+            </div>
+           
+
+            </div>
+
+          </div>
 
 
         </div>
