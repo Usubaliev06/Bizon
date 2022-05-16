@@ -39,7 +39,7 @@ header>a:hover {
     justify-content: space-around;
     align-items: top;
     width: 420px;
-    margin-left: 500px;
+    margin-left: 20%;
 }
 
 .h2>a {
@@ -73,6 +73,23 @@ header>a:hover {
 
 }
 
+@media(max-width:768px) {
+    .h2{
+        display: none
+    }
+    .burger_a {
+        display: flex;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 @media(max-width:512px) {
     .burger_a {
         display: flex;
@@ -91,7 +108,7 @@ header>a:hover {
     }
 
     header>a {
-        margin-right: 100px;
+        margin-right: 20%;
 
     }
 

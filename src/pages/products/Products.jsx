@@ -1,6 +1,7 @@
 import React from 'react'
 import css from './Products.module.css'
 import price from '../../img/price.JPG'
+import beer from '../../img/beer.JPG'
 
 export default function Products() {
     return (
@@ -34,7 +35,7 @@ export default function Products() {
                     </div>
 
                     <div className={css.sort_1}>
-                        <img src="https://downloader.disk.yandex.ru/preview/a3caffd9758b8525cdc54b300e8127a55a58e9c05d838168baecd1a63cfd2b34/627ed9ec/QDgCcMoq6FwTg7NWmxkMf50NDGvRE-q2-RTz-3iZAtlh58tDKdpkr0HX8V_7rBKC4NJRi2WYppCxi2hZhxasKw%3D%3D?uid=0&filename=CHI_7133.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=3157x1442" alt="" />
+                        <img src={beer} alt="" />
                         <p>Black Ale/ Темный Эль- превосходный бельгийский стаут,
                             обладает насыщенным «поджаренным» вкусом с шоколадными
                             и кофейными нотками. Плотный, но пьётся довольно легко.

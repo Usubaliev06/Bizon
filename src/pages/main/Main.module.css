@@ -133,21 +133,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 30px;
-    
-   
+
+
 }
-.stock >h1{
+
+.stock>h1 {
     text-align: center;
     margin-bottom: 20px;
-    
+
 }
-.stock_blocks_wrapper{
+
+.stock_blocks_wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
-.stock_blocks{
+
+.stock_blocks {
     width: 300px;
     height: 420px;
     border-radius: 20px;
@@ -155,14 +158,20 @@
     border: 3px black solid;
     margin-bottom: 20px;
 }
-.stock_blocks >img{
+
+.stock_blocks>img {
     width: 300px;
     height: 420px;
     border-radius: 20px;
 }
 
 
+@media(max-width:768px) {
+    #header_2_p2{
+        text-align: center;
+    }
 
+}
 
 
 
@@ -182,7 +191,8 @@
         padding-top: 130px;
 
     }
-    #header_2_p2{
+
+    #header_2_p2 {
         letter-spacing: 0.1em;
     }
 }

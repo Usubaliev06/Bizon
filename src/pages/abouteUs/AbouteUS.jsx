@@ -107,19 +107,6 @@ export default function AbouteUS() {
       </div>
 
 
-
-      <div className={css.block4}>
-        <h1>Оборудование</h1>
-
-        <div className={css.block4_1}>
-
-          <img src="https://nomas.ru/files/styles/max-970px/public/oborudovanie-dlya-pivovareniya-nomas_0.jpg?itok=brs-eqIY" alt="" />
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, omnis blanditiis! Autem eaque molestias laborum numquam aliquam libero? Reprehenderit, animi harum incidunt commodi optio rerum saepe beatae eveniet possimus sunt!</p>
-
-        </div>
-      </div>
-
     </div>
   )
 }

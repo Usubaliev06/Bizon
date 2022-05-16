@@ -4,7 +4,7 @@
     padding-top: 30px;
     padding-bottom: 50px;
     width: auto;
-    
+
 }
 
 
@@ -76,11 +76,12 @@
 }
 
 .block2 {
-    height:auto;
+    height: auto;
     width: 90%;
     border: 2px solid black;
     margin: 30px;
     padding-bottom: 20px;
+
 
 }
 
@@ -117,12 +118,12 @@
     margin: 30px;
     text-align: center;
     padding-top: 20px;
-    
+
 }
 
 .block3>h1 {
     margin-bottom: 40px;
-  
+
 
 }
 
@@ -181,7 +182,7 @@
 
 
 .block3_3 {
-    background-image: url("https://ochakovo.ru/wp-content/uploads/2021/09/1-1.jpg") ;
+    background-image: url("https://ochakovo.ru/wp-content/uploads/2021/09/1-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -207,21 +208,21 @@
 
 
 .block3_4 {
-    background-image: url("https://sayyes.com.ua/content/uploads/images/yeast_header.jpg") ;
+    background-image: url("https://sayyes.com.ua/content/uploads/images/yeast_header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
     height: auto;
     padding: 0px 30px;
     padding-bottom: 20px;
-    
+
 }
 
 .block3_4>h1 {
     margin-bottom: 30px;
     text-align: left;
-
 }
+
 
 .block3_4>p {
     font-size: 28px;
@@ -232,123 +233,117 @@
     padding: 10px;
 }
 
+@media(max-width:768px) {
+    #header_2_p2 {
+        text-align: center;
+    }
 
-.block4 {
-    height: auto;
-    width: 90%;
-    border: 2px solid black;
-    margin: 30px;
-    padding-bottom: 20px;
+    .block1_1 {
+        flex-direction: column;
+    }
+
+    .block1_1>p {
+        margin-top: 5%;
+        width: 70%;
+
+    }
+
+    .block2_1 {
+        flex-direction: column;
+    }
+
+    .block2_1>p {
+        margin-top: 5%;
+        width: 70%;
+    }
 }
 
-.block4>h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.block4_1 {
-    display: flex;
-    align-items: center;
-
-}
-
-.block4_1>img {
-    height: 350px;
-    width: 500px;
-    margin-left: 50px;
-    margin-right: 40px;
-}
-
-.block4_1>p {
-    width: 50%;
-    font-size: 24px;
-}
 @media(max-width:512px) {
 
     .made_beer_block2 {
         background-position: center;
     }
+
     .header_2 {
         width: auto;
         text-align: center;
         padding-top: 130px;
-        
+
     }
-    .block1{
-        flex-direction: column;
-    }
-    .block1_1{
-        flex-direction: column;
-    }
-    .block2_1{
-        flex-direction: column;
-    }
-    .block4{
-        flex-direction: column;
-       
-    }
-    .block4_1{
+
+    .block1 {
         flex-direction: column;
     }
 
-    .block3_1 > p{
-       width: 90%;
+    .block1_1 {
+        flex-direction: column;
+    }
 
+    .block2_1 {
+        flex-direction: column;
     }
-    .block3_2 > p{
-       width: 90%;
-        
-    }
-    .block3_3 > p{
+
+    .block3_1>p {
         width: 90%;
-       
-    }
-    .block3_4 > p{
-       width: 90%;
-        
+
     }
 
-    .block2_1 >img{
-    margin-left: 0;
-    margin-right: 0;
-    width: 300px;
-}
+    .block3_2>p {
+        width: 90%;
 
-    .block1_1 >img{
+    }
+
+    .block3_3>p {
+        width: 90%;
+
+    }
+
+    .block3_4>p {
+        width: 90%;
+
+    }
+
+    .block2_1>img {
         margin-left: 0;
         margin-right: 0;
         width: 300px;
     }
-    
-        .block4_1 >img{
-            margin-left: 0;
-            margin-right: 0;
-            width: 300px
-            }
-        
-            .block3_1{
-                width: 80%;
-                background-position: center;
 
-            }
-            .block3_2{
-                width: 80%;
-                
-            }.block3_3{
-                width: 80%;
-                background-position: center;
-            }.block3_4{
-                width: 80%;
-                background-position: center;
+    .block1_1>img {
+        margin-left: 0;
+        margin-right: 0;
+        width: 300px;
+    }
 
-            }
-            .block1_1>p {
-                width: 80%;
-            }
-            .block2_1>p {
-                width: 80%;
-            }
-            .block4_1>p {
-                width: 80%;
-            }
+
+    .block3_1 {
+        width: 80%;
+        background-position: center;
+
+    }
+
+    .block3_2 {
+        width: 80%;
+
+    }
+
+    .block3_3 {
+        width: 80%;
+        background-position: center;
+    }
+
+    .block3_4 {
+        width: 80%;
+        background-position: center;
+
+    }
+
+    .block1_1>p {
+        width: 80%;
+    }
+
+    .block2_1>p {
+        width: 80%;
+    }
+
 }

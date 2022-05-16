@@ -10,7 +10,7 @@ html{
 #wrapper_footer {
     height: auto;
     background-color: rgb(34, 34, 34);
-    padding: 20px 40px;
+    padding: 20px 20px;
     border-top: 5px solid rgb(220, 181, 27);
    
 }
@@ -171,9 +171,16 @@ html{
 .ham8.active .bottom { 
   stroke-dashoffset: -64px; 
 }
+#insta{
 
+  font-size: 24px;
+  color: white;
+}
+#insta:hover{
+  color: goldenrod;
+}
 
-@media(max-width:512px){
+@media(max-width:768px){
 .burger{
     display: block;
 }
