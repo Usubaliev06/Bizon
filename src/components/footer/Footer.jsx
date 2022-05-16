@@ -41,7 +41,7 @@ export default function Footer() {
           <p className={css.title}>Карта</p>
 
 
-          <iframe className={css.map_img} src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a50bc35f4b477b8c0013bbaf9e29e79a8b2cf8b93474145f8f56796d01b75a8&amp;source=constructor" width="500" height="400" frameBorder="0"></iframe>
+          <iframe title='map' className={css.map_img} src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a50bc35f4b477b8c0013bbaf9e29e79a8b2cf8b93474145f8f56796d01b75a8&amp;source=constructor" width="500" height="400" frameBorder="0"></iframe>
         </div>
 
 
