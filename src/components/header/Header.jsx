@@ -23,7 +23,7 @@ export default function Header() {
                     <Link to="/abouteUS">О нас</Link>
                     <Link to="/products">Ассортимент</Link>
                     <a href="https://wa.me/+996708475765">Написать нам</a>
-                    <Link to="#wrapper_footer">Контакты</Link>
+                    <a href="#wrapper_footer">Контакты</a>
 
                 </div>
 
@@ -46,7 +46,7 @@ export default function Header() {
                 <Link to="/abouteUS">О нас</Link>
                 <Link to="/products">Ассортимент</Link>
                 <a href="https://wa.me/+996708475765">Написать нам</a>
-                <Link to="#wrapper_footer">Контакты</Link>
+                <a href="#wrapper_footer">Контакты</a>
 
         </div>
 

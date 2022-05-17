@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
 
-        <a href="https://wa.me/+996708475765">Написать нам</a>
+        <a href="https://wa.me/+996505545479">Написать нам</a>
 
       </div>
 
