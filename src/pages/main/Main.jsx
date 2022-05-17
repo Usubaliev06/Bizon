@@ -1,6 +1,7 @@
 import React from 'react'
 import css from './Main.module.css'
 import stock from './../../img/stock.PNG'
+import { Link } from 'react-router-dom'
 
 
 
@@ -38,7 +39,7 @@ export default function Main() {
               развиваться и все время улучшать то, что мы делаем.
             </p>
 
-            <a href='/products'>Hаше пиво</a>
+            <Link href='/products'>Hаше пиво</Link>
 
           </div>
 
