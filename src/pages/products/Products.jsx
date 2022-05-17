@@ -4,7 +4,6 @@ import price from '../../img/price.JPG'
 import beer from '../../img/beer.JPG'
 import beer2 from '../../img/beer2.jpg'
 
-
 export default function Products() {
     return (
         <div className={css.products_wrapper}>

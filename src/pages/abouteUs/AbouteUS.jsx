@@ -1,5 +1,7 @@
 import React from 'react'
 import css from './AbouteUS.module.css'
+import recept from './../../img/recept.jpg'
+
 
 export default function AbouteUS() {
   return (
@@ -19,7 +21,7 @@ export default function AbouteUS() {
         <h1>Bizon craft beer</h1>
 
         <div className={css.block1_1}>
-          <img src="https://downloader.disk.yandex.ru/preview/1fa4c5b9b293f778d1009ce9081f93eb3b2688e4dd15ce1293e15ca735a24e1f/626c34db/refUspvXM61_6vF5IKZUizx1xXji9KunwGfLoyW5evkWfs0eGB-r2UF6K4qHWgS72pHrMGSeWVHdc0aU8VC6uw%3D%3D?uid=0&filename=CHI_7152.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1771x1330&crop=1" alt="" />
+          <img src={recept} alt="" />
 
           <p>Уникальная рецептура, отборные европейские ингредиенты, немецкое высококачественное оборудование- все это про нас.
             Наша пивоварня вышла на Кыргызстанский рынок напитков
