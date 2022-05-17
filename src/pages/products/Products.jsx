@@ -26,7 +26,7 @@ export default function Products() {
                 <div className={css.sort}>
 
                     <div className={css.sort_1}>
-                        <img src={beer2}/>
+                        <img src={beer2} alt="beer"/>
                         <p> Pale Ale/ Светлый Эль- пиво янтарно-золотистого
                             цвета с фруктовыми и цитрусовыми ароматами.
                             Основная «фишка»– баланс между сладким солодом и
@@ -37,7 +37,7 @@ export default function Products() {
                     </div>
 
                     <div className={css.sort_1}>
-                        <img src={beer} alt="" />
+                        <img src={beer} alt="beer" />
                         <p>Black Ale/ Темный Эль- превосходный бельгийский стаут,
                             обладает насыщенным «поджаренным» вкусом с шоколадными
                             и кофейными нотками. Плотный, но пьётся довольно легко.
@@ -49,7 +49,7 @@ export default function Products() {
                 </div>
 
                 <div className={css.price}>
-                    <img src={price} alt="" />
+                    <img src={price} alt="price" />
                 </div>
 
             </div>
