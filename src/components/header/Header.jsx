@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import css from './Header.module.css'
 import logo from '../../img/logo.JPG'
+import { Link } from 'react-router-dom'
 
 
 
@@ -19,10 +20,10 @@ export default function Header() {
                 <a href="/">BIZON</a>
 
                 <div className={css.h2}>
-                    <a href="/abouteUS">О нас</a>
-                    <a href="/products">Ассортимент</a>
+                    <Link to="/abouteUS">О нас</Link>
+                    <Link to="/products">Ассортимент</Link>
                     <a href="https://wa.me/+996708475765">Написать нам</a>
-                    <a href="#wrapper_footer">Контакты</a>
+                    <Link to="#wrapper_footer">Контакты</Link>
 
                 </div>
 
@@ -42,10 +43,10 @@ export default function Header() {
 
                 <div className={css.burger_a  + " " +  (active ? css.active : "")}>
 
-                <a href="/abouteUS">О нас</a>
-                <a href="/products">Ассортимент</a>
+                <Link to="/abouteUS">О нас</Link>
+                <Link to="/products">Ассортимент</Link>
                 <a href="https://wa.me/+996708475765">Написать нам</a>
-                <a href="#wrapper_footer">Контакты</a>
+                <Link to="#wrapper_footer">Контакты</Link>
 
         </div>
 

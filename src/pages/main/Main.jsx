@@ -39,7 +39,7 @@ export default function Main() {
               развиваться и все время улучшать то, что мы делаем.
             </p>
 
-            <Link href='/products'>Hаше пиво</Link>
+            <Link to='/products'>Hаше пиво</Link>
 
           </div>
 
