@@ -22,7 +22,7 @@ export default function Header() {
                 <div className={css.h2}>
                     <Link to="/abouteUS">О нас</Link>
                     <Link to="/products">Ассортимент</Link>
-                    <a href="https://wa.me/+996708475765">Написать нам</a>
+                    <a href="https://wa.me/+996505545479">Написать нам</a>
                     <a href="#wrapper_footer">Контакты</a>
 
                 </div>
