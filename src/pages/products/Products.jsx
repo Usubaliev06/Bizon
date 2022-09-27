@@ -3,6 +3,9 @@ import css from './Products.module.css'
 import price from '../../img/price.JPG'
 import beer from '../../img/beer.JPG'
 import beer2 from '../../img/beer2.jpg'
+import beer3 from '../../img/IMG_2726.JPG'
+import beer4 from '../../img/beer_lake.jpg'
+
 
 export default function Products() {
     return (
@@ -25,7 +28,7 @@ export default function Products() {
                 <div className={css.sort}>
 
                     <div className={css.sort_1}>
-                        <img src={beer2} alt="beer"/>
+                        <img src={beer2} alt="beer" />
                         <p> Pale Ale/ Светлый Эль- пиво янтарно-золотистого
                             цвета с фруктовыми и цитрусовыми ароматами.
                             Основная «фишка»– баланс между сладким солодом и
@@ -43,6 +46,15 @@ export default function Products() {
                             Минимальное количество хмеля и горечи, чтобы максимально
                             насладиться сочетанием солодов.
                             ALC 5,5%   OG 17%   IBU 6</p>
+                    </div>
+
+                    <div className={css.beer_example}>
+
+                        <img src={beer3} alt="beer" />
+
+                        <img src={beer4} alt="beer" />
+
+
                     </div>
 
                 </div>
