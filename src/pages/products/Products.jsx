@@ -25,6 +25,7 @@ export default function Products() {
                 <h1>Ассортимент</h1>
                 <p>В ассортименте Bizon Craft Beer 2 сорта пенного напитка:</p>
 
+
                 <div className={css.sort}>
 
                     <div className={css.sort_1}>
