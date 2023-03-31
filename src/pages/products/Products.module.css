@@ -1,159 +1,96 @@
-.header_2 {
-    margin-top: -140px;
-    width: 40%;
-    height: 100px;
-    height: 450px;
-    width: 100%;
-    background-image: url('/public/main_beer.jpg');
-    background-size: cover;
-    background-position: center;
-    border-bottom: 5px solid rgb(220, 181, 27);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.productsWrapper {
+  
+}
+.cardWrapper{
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-image: url(../../images/photo-1567080586917-e6ab6aa0df85.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.productsCard {
+  width: 650px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
 }
 
-#header_2_p1 {
-    color: rgb(252, 251, 247);
-    font-size: 38px;
-    letter-spacing: 0.3em;
-
+.productsCard>img {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  transition: width 1s linear
 }
 
-#header_2_p2 {
-    color: white;
-    font-size: 60px;
-    background-color: rgba(5, 7, 7, 0.485);
-    border-radius: 10px;
-    letter-spacing: 0.3em;
-
-
+.productsCard>img:hover {
+  width: 50%;
 }
 
-
-.block1 {
-    height: auto;
-    background-image: url("https://images.wallpaperscraft.ru/image/single/derevyannyj_poverkhnost_tekstura_doski_118443_3840x2160.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.productsDes {
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(46, 39, 20);
+  height: 100%;
+  width: 50%;
 }
 
-.block1>p {
-    font-size: 27px;
-    color: white;
-    margin-left: 10px;
-
+.productsDes>h1 {
+  background-color: rgba(94, 94, 94, 0.425);
+  padding: 10px;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
 }
 
-.block1>h1 {
-    text-align: center;
-    color: white;
-    letter-spacing: 0.1em;
+.productsDes>p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 30px;
+  height: 30%;
+  height: fit-content;
 }
 
-.sort {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-   
-
+.productsDes>h3 {
+  color: rgb(0, 0, 0);
+  background-color: rgba(94, 94, 94, 0.425);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 28px;
 }
 
-.sort_1 {
-    height: auto;
-    width: 45%;
-    border: 1px solid black;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 20px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.589);
-    
+.priceImg {
+  width: 100%;
+  height: auto;
 }
 
-.sort_1>img {
-    width: 200px;
-    height: 300px;
-    border-radius: 5px;
+@media(max-width:585px) {
+  
+.productsCard {
+  width: 90%;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.sort_1>p {
-    width: 60%;
-    font-size: 21px;
-   
-}
-
-.price {
-    margin-bottom: -5px;
-}
-
-.price>img {
-    height: 100%;
-    width: 100%;
-}
-
-.beer_example{
-    display: flex;
-    width: 100%;
-    padding: 5% 10%;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
-
-}
-.beer_example > img {
-width: 300px;
-height: 65vh;
-border-radius: 20px;
-margin-top: 20px;
-margin-right: 10%;
-}
-
-@media(max-width:768px){
-    .sort_1 {
-        width: 80%;
-        justify-content: center;
-    }
-    .sort_1>img{
-        margin-right: 5%;
-    }
-    #header_2_p2{
-        text-align: center;
-    }
+.productsCard>img {
+  width: 90%;
 
 }
 
-@media(max-width:512px) {
-    .sort_1>p {
-        width: 100%;
-    }
+.productsCard>img:hover {
+  width: 100%;
+}
 
-    .sort_1 {
-        width: 80%;
-        justify-content: center;
-    }
+.productsDes {
 
-    .sort_1>img {
-        margin-bottom: 10px;
-    }
+  width: 100%;
+}
 
-    .header_2 {
-        width: auto;
-        text-align: center;
-        padding-top: 130px;
-
-    }
-
-    #header_2_p2 {
-        letter-spacing: 0.1em;
-    }
 }

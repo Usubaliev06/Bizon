@@ -1,118 +1,244 @@
-.wrapper {
-
-    position: sticky;
-    top: 0;
+.headerWrapper {
+  position: sticky;
+  top: 0;
+  margin-bottom: -200px;
+  z-index: 30;
 }
 
 header {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7290266448376226) 28%, rgba(4, 7, 18, 0.9699230033810399) 59%);
-    padding-left: 30px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  /* background: rgb(255, 251, 251); */
+  background: linear-gradient(
+    0deg,
+    rgba(255, 251, 251, 0) 0%,
+    rgba(0, 0, 0, 0.6099051681219363) 34%,
+    rgba(0, 0, 0, 1) 65%
+  );
+  height: 200px;
 }
 
-header>img {
-    margin-top: 40px;
-    width: 100px;
-    height: 100px;
-    margin-right: 40px;
-    border-radius: 20px;
+header > a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
 }
 
-header>a {
-    color: white;
+.logo {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links button {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 30px;
+}
+
+.links button:hover {
+  border-bottom: 4px solid white;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.links a:hover {
+  border-bottom: 4px solid white;
+  font-size: 35px;
+}
+
+header > a:hover {
+  border-bottom: 4px solid white;
+  font-size: 45px;
+}
+
+.tagline {
+  height: 500px;
+  background-image: url(../../images/main_beer.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 240px;
+  border-bottom: 7px solid rgb(102, 45, 12);
+}
+
+.tagline > p {
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.562);
+  width: fit-content;
+  margin: auto;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.tagline > h1 {
+  color: white;
+  font-size: 50px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.562);
+  width: fit-content;
+  margin: auto;
+  border-radius: 20px;
+}
+/* /////////////////////////////////////// */
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1300px) {
+  .links {
+    display: none;
+  }
+}
+
+@media (max-width: 585px) {
+  .links {
+    display: none;
+  }
+
+  .tagline > p {
+    font-size: 25px;
+  }
+
+  .tagline > h1 {
     font-size: 30px;
-    text-decoration: none;
-    padding: 10px 20px;
+  }
 }
 
-header>a:hover {
-    border: 1px dashed rgb(255, 213, 0);
-    padding: 10px 20px;
+.burger {
+  display: none;
 }
 
-.h2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: top;
-    width: 420px;
-    margin-left: 20%;
-}
-
-.h2>a {
-
-    text-decoration: none;
-    color: white;
-    font-size: 23px;
-    width: auto;
-}
-
-.h2>a:hover {
-    border: 1px dashed rgb(255, 213, 0);
-    padding: 5px 5px;
-}
-
-.burger_a {
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block !important;
+  }
+  .label {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 20px;
-    right: 14%;
+    width: 70px;
+    cursor: pointer;
+  }
+
+  .label .span {
+    background: black;
+    border-radius: 10px;
+    height: 4px;
+    margin: 5px 0;
+    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  .span:nth-of-type(1) {
+    width: 40%;
+    transform: rotatez(0deg) translate(0, 0) !important;
+  }
+
+  .span:nth-of-type(2) {
+    width: 80%;
+    transform: rotatez(-0deg) !important;
+  }
+
+  .span:nth-of-type(3) {
+    width: 55%;
+    transform: translate(90, -0) rotatez(0deg) !important;
+  }
+
+  .check[type="checkbox"] {
     display: none;
-}
+  }
 
-.burger_a>a {
-    padding: 10px 10px;
-    background-color: rgba(92, 94, 96, 0.716);
-    text-decoration: none;
-    color: white;
-    font-family: 38px;
+  .check[type="checkbox"]:checked ~ .span:nth-of-type(1) {
+    transform-origin: bottom;
+    width: 65%;
+  }
 
-}
+  .check[type="checkbox"]:checked ~ .span:nth-of-type(2) {
+    transform-origin: top;
+    width: 50%;
+  }
 
-@media(max-width:768px) {
-    .h2{
-        display: none
-    }
-    .burger_a {
-        display: flex;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .active {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-@media(max-width:512px) {
-    .burger_a {
-        display: flex;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .active {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .h2 {
-        display: none;
-    }
-
-    header>a {
-        margin-right: 10%;
-
-    }
-
-    header>img {
-        margin-right: 20px;
-    }
+  .check[type="checkbox"]:checked ~ .span:nth-of-type(3) {
+    width: 70%;
+  }
 }

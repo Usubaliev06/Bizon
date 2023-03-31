@@ -1,198 +1,234 @@
-.wrapper {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+.mainWrapper {}
+
+main {}
+
+.create {
+  height: fit-content;
+  background-image: url(../../images/IMG_5596.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px;
+  text-align: left;
+  /* transition: background-color 1s linear; */
+  transition: padding 1s linear;
+  border-bottom: 7px solid rgb(102, 45, 12);
+}
+
+.create:hover {
+  padding: 95px;
+}
+
+.create>img {
+  z-index: -10;
+}
+
+.create>h1 {
+  font-size: 60px;
+  color: rgb(53, 33, 17);
+  background-color: rgba(182, 177, 177, 0.555);
+  width: fit-content;
+  margin-bottom: 70px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.create>p {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(182, 177, 177, 0.555);
+  width: 75%;
+  max-width: 1300px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.create>a {
+  font-size: 40px;
+  color: rgb(53, 33, 17);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 1s linear;
 
 }
 
-.header_2 {
-    margin-top: -140px;
-    width: 40%;
-    height: 100px;
-    height: 450px;
-    width: 100%;
-    background-image: url('/public/main_beer.jpg');
-    background-size: cover;
-    background-position:center;
-    border-bottom: 5px solid rgb(220, 181, 27);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#header_2_p1 {
-    color: rgb(252, 251, 247);
-    font-size: 38px;
-    letter-spacing: 0.3em;
+.create>a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(53, 33, 17);
 
 }
 
-#header_2_p2 {
-    color: white;
-    font-size: 60px;
-    background-color: rgba(5, 7, 7, 0.485);
-    border-radius: 10px;
-    letter-spacing: 0.3em;
+.sliderWrapper {
+  height: 800px;
+  width: 100%;
+  padding: 170px 200px 0px 200px;
+  text-align: center;
+  background-image: url('https://usagif.com/wp-content/uploads/gif/beer-10.gif');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 7px solid rgb(102, 45, 12);
+}
 
+.sliderWrapper button {
+  background-color: rgb(131, 53, 17);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+
+
+#card1Bac {
+  background-image: url(../../images/IMG_7148.JPG);
+}
+
+#card2Bac {
+  background-image: url(../../images/IMG_7149.JPG);
+}
+
+#card3Bac {
+  background-image: url(../../images/IMG_7147.JPG);
+}
+
+#card4Bac {
+  background-image: url(../../images/recept.jpg);
+}
+
+.card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: fit-content;
+  height: 550px;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 100px;
+}
+
+
+
+.card>h3 {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.856);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card>p {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 100px;
+  background-color: rgba(17, 17, 17, 0.685);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.video {
+  height: fit-content;
+}
+
+.video>video {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
+}
+
+
+@media(max-width:1300px) {
+  .create>h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .create>p {
+    font-size: 30px;
+    width: 75%;
+    margin-bottom: 80px;
+  }
+  
+  .create>a {
+    font-size: 30px;
+    padding: 15px;
+  }
+
+  
+.sliderWrapper {
+  height: 700px;
+  width: 100%;
+  padding: 100px ;
+}
+
+.sliderWrapper button {
+  height: 50px;
+  width: 50px;
+}
+
+.card {
+  height: 500px;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.card>h3 {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+.card>p {
+  color: white;
+  font-size: 25px;
+}
 
 }
 
-.made_beer {
-    width: 100%;
-    height: auto;
 
-}
-
-.made_beer_block1 {
-    width: auto;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("https://t3.ftcdn.net/jpg/01/79/06/56/360_F_179065651_v2xe0vhQwRNbW0AxfhRAjmICpCecQsuB.jpg");
-    padding: 70px 70px;
-}
-
-#made_beer_block1_title1 {
-    font-size: 35px;
-    color: #937433;
-
-}
-
-#made_beer_block1_title2 {
-    color: white;
-    font-size: 45px;
-}
-
-#made_beer_block1_des {
-    color: rgb(167, 165, 165);
+@media(max-width:585px) {
+  .create>h1 {
     font-size: 25px;
-    margin-bottom: 7%;
+    margin-bottom: 50px;
+  }
+  
+  .create>p {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  
+.sliderWrapper {
+  height: 600px;
+  width: 100%;
+  padding: 50px ;
 }
 
-.made_beer_block1>a {
-    text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    font-size: 26px;
-    letter-spacing: 5px;
-    border-radius: 5px;
-    background-color: #523b09;
-    color: white;
-
+.sliderWrapper button {
+  height: 40px;
+  width: 40px;
 }
 
-.made_beer_block1>a:hover {
-    background-color: rgb(194, 189, 189);
-    color: #88661b;
+.card {
+  height: 500px;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-.made_beer_block2 {
-    display: flex;
-    text-align: center;
-    background-image: url('https://img5.goodfon.ru/wallpaper/nbig/c/ac/bizon-priroda-fon.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    height: auto;
-
-
+.card>h3 {
+  font-size: 20px;
+  margin-bottom: 100px;
 }
 
-.card1 {
-    width: auto;
-    height: 318px;
-    background-color: rgba(83, 80, 80, 0.527);
-    border: 1px black solid;
-
+.card>p {
+  color: white;
+  font-size: 20px;
 }
-
-.made_beer_block2_img {
-    height: 50px;
-    width: 50px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-}
-
-.made_beer_block2_title1 {
-    color: #b28f4e;
-    font-size: 25px;
-
-
-}
-
-.made_beer_block2_title2 {
-    color: rgb(254, 254, 255);
-    font-size: 23px;
-}
-
-.stock {
-    background-image: url("https://img2.akspic.ru/previews/4/0/3/1/1/111304/111304-korichnevyj_cvet-drevesina-pergament-uzor-bumaga-550x310.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px 30px;
-
-
-}
-
-.stock>h1 {
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-
-.stock_blocks_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.stock_blocks {
-    width: 300px;
-    height: 420px;
-    border-radius: 20px;
-    padding: 5px;
-    border: 3px black solid;
-    margin-bottom: 20px;
-}
-
-.stock_blocks>img {
-    width: 300px;
-    height: 420px;
-    border-radius: 20px;
-}
-
-
-@media(max-width:768px) {
-    #header_2_p2{
-        text-align: center;
-    }
-
-}
-
-
-
-@media(max-width:512px) {
-    .card1 {
-        height: auto;
-        padding-bottom: 10px;
-    }
-
-    .made_beer_block2 {
-        background-position: center;
-    }
-
-    .header_2 {
-        width: auto;
-        text-align: center;
-        padding-top: 130px;
-
-    }
-
-    #header_2_p2 {
-        letter-spacing: 0.1em;
-    }
 }

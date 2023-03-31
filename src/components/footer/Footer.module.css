@@ -1,121 +1,171 @@
-.block1>a {
-    margin-left: 40px;
-    margin-top: 140px;
-    margin-bottom: 5%;
-    height: 70px;
-    width: 170px;
-    border-radius: 10px;
-    border: 0;
-    font-size: 27px;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-    padding-left: 40px;
-    background-color: aliceblue;
+#footerWrapper {}
+
+footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(38, 35, 35, 1) 28%, rgba(47, 46, 46, 1) 50%, rgba(38, 35, 35, 1) 71%, rgba(0, 0, 0, 1) 96%);
+  padding: 30px;
 }
 
-.block1>a:hover {
-    background-color: rgb(188, 172, 25);
-    color: rgb(255, 255, 255);
+.footerContact {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.block1 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.phone {
 
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.title {
-    color: rgb(220, 181, 27);
-    font-size: 35px;
-    font-weight: 600px;
-    margin-bottom: 20px;
+.phone>h1 {
+  color: rgb(236, 176, 11);
+  margin-bottom: 40px;
 }
 
-.des0 {
-    color: white;
-    font-size: 21px;
+.phone>a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 5px;
 }
 
-.des {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 21px;
-    text-decoration: none;
-}
+.phone>a:hover {
+  color: rgb(236, 176, 11);
 
-.des:hover {
-    color: rgb(185, 158, 7);
-
-}
-
-.map {
-    width: 300px;
-    height: 350px;
-}
-
-.map_img {
-    height: 250px;
-    width: 310px;
-}
-
-.block2 {
-    display: flex;
-}
-
-#copy {
-    color: white;
-    font-size: 15px;
-    margin-right: 60px;
-}
-
-#rules {
-    color: rgba(255, 255, 255, 0.088);
-    font-size: 26px;
 }
 
 .insta {
-    height: 50px;
-    width: 50px;
-    margin-right: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
 }
 
-.insta_wrapper {
-    margin-top: 30px;
-    display: flex;
-    text-decoration: none;
-    align-items: center;
+.insta img {
+  height: 80px;
+  width: 80px;
+  margin-left: -15px;
 }
 
-@media(max-width:768px) {
-    .block1>a {
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
+.insta img:hover {
+  height: 85px;
+  width: 85px;
+  margin-left: -19px;
+}
+
+.insta>a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.insta>a:hover {
+  color: rgb(236, 176, 11);
+}
+
+.addres {}
+
+.addres>h1 {
+  color: rgb(236, 176, 11);
+  margin-bottom: 40px;
+}
+
+.addres>p {
+  color: white;
+  font-size: 25px;
+}
+
+.mapWrapper {}
+
+.mapWrapper>h1 {
+  color: rgb(236, 176, 11);
+  margin-bottom: 40px;
+}
+
+.mapWrapper>iframe {
+  height: 300px;
+  width: 400px;
+}
+
+.whatsapp {
+  height: 70px;
+  width: 250px;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 100px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.whatsapp:hover {
+  background-color: rgb(236, 176, 11);
+  color: white;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -20px;
+  width: 80%;
+}
+
+.copy {
+  font-size: 20px;
+  color: white;
+}
+
+.rule {
+  margin-top: 20px;
+  font-size: 40px;
+  color: rgba(87, 85, 85, 0.397);
+}
+
+@media(max-width:1370px) {
+  
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 30px;
+}
+  
+.copy {
+  font-size: 15px;
+  color: white;
+}
+
+.rule {
+  margin-top: 20px;
+  font-size: 25px;
+  color: rgba(87, 85, 85, 0.397);
+}
+
+
+.mapWrapper>iframe {
+  height: 200px;
+  width: 300px;
+}
 
 }
 
-@media(max-width:512px) {
-    .block1>a {
-        margin-top: 20px;
-    }
+@media(max-width:585px) {
 
-    .block2 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #copy {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .map_img {
-        height: 200px;
-        width: 250px;
-    }
+  .mapWrapper>iframe {
+    height: 250px;
+    width: 250px;
+  }
+  
 }

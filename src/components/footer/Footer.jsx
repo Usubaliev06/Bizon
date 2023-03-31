@@ -1,59 +1,49 @@
-import React from 'react'
-import css from './Footer.module.css'
+import React from 'react';
+import css from '../footer/Footer.module.css'
+import insta from '../../images/instagram.png'
 
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <div id='wrapper_footer'>
+    <div id='footerWrapper'>
 
+      <footer>
+        <div className={css.footerContact}>
 
-      <div className={css.block1}>
+          <div className={css.phone}>
+            <h1>Телефоны</h1>
+            <a href="tel:+996505545479">+996 (505) 54-54-79</a>    
+            <a href="tel:+996701700812">+996 (701) 70-08-12</a>
 
-        <div className={css.phone}>
-          <img src="" alt="" />
-
-          <div>
-            <p className={css.title}>Телефоны</p>
-
-            <a href='tel:+996708475765' className={css.des}>+996-708-475-765</a>
-            <a href='tel:+996701444407' className={css.des}>+996-701-444-407</a>
-            <a className={css.insta_wrapper} href="https://www.instagram.com/bizon.craftbeer"> 
-            
-            <img className={css.insta} src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="" />
-            <p id='insta'>bizon.craftbeer</p>
-            
-            </a>
+            <div className={css.insta}>
+              <a href="https://www.instagram.com/bizon.craftbeer">  <img src={insta} alt="insta" /></a>
+              <a href="https://www.instagram.com/bizon.craftbeer">bizon.craftbee</a>
+            </div>
           </div>
 
-        </div>
-
-        <div className={css.location}>
-
-          <div>
-
-            <p className={css.title}>Адрес пивоварни</p>
-            <p className={css.des0}>8 мкр. ул.Саманчина дом 40</p>
+          <div className={css.addres}>
+            <h1>Адрес пивоварни</h1>
+            <p>8 мкр. ул.Саманчина дом 40</p>
           </div>
 
+          <div className={css.mapWrapper}>
+            <h1>Карта</h1>
+            <iframe title='map' className={css.map_img} src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a50bc35f4b477b8c0013bbaf9e29e79a8b2cf8b93474145f8f56796d01b75a8&amp;source=constructor" width="500" height="400" frameBorder="0"></iframe>
+          </div>
+
+          <a className={css.whatsapp} href='https://wa.me/+996505545479'>Написать нам</a>
+
         </div>
 
-        <div className={css.map}>
-          <p className={css.title}>Карта</p>
-
-
-          <iframe title='map' className={css.map_img} src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a50bc35f4b477b8c0013bbaf9e29e79a8b2cf8b93474145f8f56796d01b75a8&amp;source=constructor" width="500" height="400" frameBorder="0"></iframe>
+        <div className={css.footerInfo}>
+          <p className={css.copy}>© 2017–2023 Крафтовая пивоварня «Bizon»</p>
+          <p className={css.rule}>18+ ПЕЙТЕ КУЛЬТУРНО! Чрезмерное употребление алкоголя вредит вашему здоровью</p>
         </div>
 
-
-        <a href="https://wa.me/+996505545479">Написать нам</a>
-
-      </div>
-
-      <div className={css.block2}>
-        <p id={css.copy}>© 2017–2022 Крафтовая пивоварня «Bizon»</p>
-        <p id={css.rules}> 18+ ПЕЙТЕ КУЛЬТУРНО! Чрезмерное употребление алкоголя вредит вашему здоровью</p>
-      </div>
+      </footer>
 
     </div>
-  )
+  );
 }
+
+export default Footer;

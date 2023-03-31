@@ -1,0 +1,269 @@
+.aboutUsWrapper {}
+
+.bizon {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bizon>img {
+  height: auto;
+  width: 50%;
+}
+
+.bizonDes {
+  height: auto;
+  width: calc(100%/2);
+  background-color: rgb(63, 55, 34);
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bizonDes>h1 {
+  font-size: 50px;
+  margin-bottom: 70px;
+  color: rgb(32, 24, 6);
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(240, 248, 255, 0.11);
+
+}
+
+
+.bizonDes>p {
+  font-size: 24px;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(240, 248, 255, 0.11);
+
+}
+
+
+
+
+
+
+
+
+.production {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.production>img {
+  height: auto;
+  width: 50%;
+}
+
+.productionDes {
+  height: auto;
+  width: calc(100%/2);
+  background-color: rgb(63, 55, 34);
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productionDes>h1 {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(240, 248, 255, 0.11);
+  font-size: 50px;
+  margin-bottom: 70px;
+  color: rgb(32, 24, 6);
+}
+
+
+.productionDes>p {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(240, 248, 255, 0.11);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.ingredients {
+  height: fit-content;
+  width: 100%;
+
+}
+
+.ingredientsCard {
+  height: fit-content;
+  min-height: 600px;
+  width: 50%;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 50px;
+}
+
+.ingredientsCard>h1 {
+  color: rgb(36, 25, 12);
+  font-size: 50px;
+  margin-bottom: 70px;
+  background-color: rgba(240, 248, 255, 0.39);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.ingredientsCard>p {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(240, 248, 255, 0.11);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#bac1 {
+  background-image: url('../../images/IMG_6760.JPG');
+
+}
+
+#bac2 {
+  background-image: url('../../images/IMG_6763.JPG');
+}
+
+#bac3 {
+  background-image: url('../../images/IMG_7146.JPG');
+
+}
+
+#bac4 {
+  background-image: url('../../images/IMG_7149.JPG');
+}
+
+.ingredientsBlock1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ingredientsBlock2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media(max-width:1300px) {
+
+  .bizon>img {
+    width: 50%;
+    object-fit: contain;
+    background-color: rgb(63, 55, 34);
+
+  }
+
+  .bizonDes {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .bizonDes>h1 {
+    font-size: 30px;
+  }
+
+
+  .bizonDes>p {
+    font-size: 20px;
+  }
+
+  .production>img {
+    width: 50%;
+    object-fit: contain;
+    background-color: rgb(63, 55, 34);
+
+  }
+
+  .productionDes {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .productionDes>h1 {
+    font-size: 30px;
+  }
+
+
+  .productionDes>p {
+    font-size: 20px;
+  }
+
+  .ingredientsCard {
+    width: 100%;
+  }
+
+}
+
+@media(max-width:585px) {
+
+
+  .bizon>img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bizonDes {
+    width: 100%;
+    padding: 30px;
+
+  }
+
+  .bizonDes>h1 {
+    font-size: 30px;
+  }
+
+
+  .bizonDes>p {
+    font-size: 20px;
+  }
+
+  .production>img {
+    width: 100%;
+    height: auto;
+  }
+
+  .productionDes {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .productionDes>h1 {
+    font-size: 30px;
+  }
+
+
+  .productionDes>p {
+    font-size: 20px;
+  }
+
+
+  .ingredientsCard>h1 {
+
+    font-size: 30px;
+    margin-bottom: 50px;
+    padding: 10px;
+  }
+
+  .ingredientsCard>p {
+    font-size: 15px;
+    background-color: rgba(22, 25, 29, 0.295);
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+
+}

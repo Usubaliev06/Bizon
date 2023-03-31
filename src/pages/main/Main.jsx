@@ -1,104 +1,62 @@
-import React from 'react'
-import css from './Main.module.css'
-import stock from './../../img/stock.PNG'
-import { Link } from 'react-router-dom'
+
+import Slider from "react-slick";
+import css from "./Main.module.css"
+import { NavLink } from 'react-router-dom'
+import video from '../../images/IMG_4325.MP4'
 
 
+const Main = () => {
 
-export default function Main() {
-  return (
-    <div className={css.wrapper}>
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
 
-
+ return (
+    <div className={css.mainWrapper}>
 
       <main>
+        <div className={css.create}>
+          <h1>Как мы создаем крафтовое пиво</h1>
+          <p>Наше пиво называется крафтовым, так как мы стараемся экспериментировать во всем - в рецептурах, технолог</p>
+          <NavLink to='/products'>Наше пиво</NavLink>
+        </div>
 
-        <div className={css.header_2}>
-          <p id={css.header_2_p1}>
-            Пивоварня "BIZON"
-          </p>
-          <p id={css.header_2_p2}>
-            НОВЫЕ ГРАНИ ВКУСА
-          </p>
+        <div className={css.sliderWrapper}>
+          <Slider {...settings}>
+            <div className={css.card} id={css.card1Bac}>
+              <h3>КАЧЕСТВЕННОЕ СЫРЬЕ</h3>
+              <p>100% натуральный состав без добавления химических примесей</p>
+            </div>
+            <div className={css.card} id={css.card2Bac}>
+              <h3>АВТОРСКАЯ РЕЦЕПТУРА</h3>
+              <p>Мы чтим пивоварские традиции, но любим создавать что-то свое, индивидуальное</p>
+            </div>
+            <div className={css.card} id={css.card3Bac}>
+              <h3>СОВРЕМЕННОЕ ОБОРУДОВАНИЕ</h3>
+              <p>Наше мини-производство открывает широкие горизонты для различных экспериментов</p>
+            </div>
+            <div className={css.card} id={css.card4Bac}>
+              <h3>УНИКАЛЬНЫЙ АСОРТИМЕНТ</h3>
+              <p>Открывайте для себя новые пивные вкусы вместе с нами</p>
+            </div>
+          </Slider>
+        </div>
+
+        <div className={css.video}>
+          <video src={video} controls></video>
         </div>
 
 
-        <div className={css.made_beer}>
+      </main >
 
 
-          <div className={css.made_beer_block1}>
 
-            <p id={css.made_beer_block1_title1}>Как мы создаем</p>
-
-            <p id={css.made_beer_block1_title2}>КРАФТОВОЕ ПИВО</p>
-
-            <p id={css.made_beer_block1_des}>Наше пиво называется крафтовым, так как мы
-              стараемся экспериментировать во всем - в
-              рецептурах, технологии, ингредиентах. Мы не
-              останавливаемся на чем-то одном, нам важно
-              развиваться и все время улучшать то, что мы делаем.
-            </p>
-
-            <Link to='/products'>Hаше пиво</Link>
-
-          </div>
-
-          <div className={css.made_beer_block2} >
-
-            <div className={css.made_beer_block2_floor1}>
-
-
-              <div className={css.card1}>
-
-                <img className={css.made_beer_block2_img} src="https://img.icons8.com/ios/2x/hops.png" alt="" />
-                <p className={css.made_beer_block2_title1}>КАЧЕСТВЕННОЕ СЫРЬЕ</p>
-                <p className={css.made_beer_block2_title2}>100% натуральный состав без добавления химических примесей</p>
-              </div>
-
-              <div className={css.card1}>
-                <img className={css.made_beer_block2_img} src="https://img.icons8.com/ios/2x/manufacturing.png" alt="" />
-                <p className={css.made_beer_block2_title1}>СОВРЕМЕННОЕ ОБОРУДОВАНИЕ</p>
-                <p className={css.made_beer_block2_title2}>Наше мини-производство открывает широкие горизонты для различных экспериментов</p>
-              </div>
-
-            </div>
-
-            <div className={css.made_beer_block2_floor1}>
-
-              <div className={css.card1}>
-                <img className={css.made_beer_block2_img} src="https://img.icons8.com/wired/2x/wooden-beer-keg.png" alt="" />
-                <p className={css.made_beer_block2_title1}>АВТОРСКАЯ РЕЦЕПТУРА</p>
-                <p className={css.made_beer_block2_title2}>Мы чтим пивоварские традиции, но любим создавать что-то свое, индивидуальное</p>
-              </div>
-
-              <div className={css.card1}>
-                <img className={css.made_beer_block2_img} src="https://img.icons8.com/ios/2x/beer.png" alt="" />
-                <p className={css.made_beer_block2_title1}>УНИКАЛЬНЫЙ АСОРТИМЕНТ</p>
-                <p className={css.made_beer_block2_title2}>Открывайте для себя новые пивные вкусы вместе с нами</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div className={css.stock}>
-            <h1>Акции</h1>
-
-            <div className={css.stock_blocks_wrapper}>
-
-            <div className={css.stock_blocks} >
-              <img src={stock} alt="" />
-            </div>
-           
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-      </main>
-    </div>
-  )
+    </div >
+  );
 }
+
+export default Main;
