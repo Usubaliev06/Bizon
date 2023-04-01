@@ -1,4 +1,3 @@
-import React from 'react';
 import css from './Products.module.css'
 import img1 from '../../images/IMG_6856.JPG'
 import img2 from '../../images/beer2.jpg'

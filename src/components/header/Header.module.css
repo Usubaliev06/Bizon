@@ -98,77 +98,108 @@ header > a:hover {
   margin: auto;
   border-radius: 20px;
 }
-/* /////////////////////////////////////// */
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
-}
 
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #373a47;
+.orderNone {
+  display: none;
 }
-
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: #a90000;
+.order {
+  position: sticky;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: grey;
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+  height: 500px;
+  margin-top: -500px;
+  text-align: center;
 }
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
+.order > h1 {
+  margin-top: 20px;
 }
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
+.order > input {
+  height: 40px;
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin: auto;
+  background-color: rgb(170, 188, 204);
 }
-
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
-.bm-menu-wrap {
-  position: fixed;
-  height: 100%;
+.send {
+  height: 60px;
+  width: 300px;
+  margin: auto;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: rgb(110, 51, 33);
+  padding-top: 18px;
+  text-decoration: none;
 }
+.send:hover {
+  color: rgb(110, 51, 33);
 
-/* General sidebar styles */
-.bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  background-color: rgb(255, 255, 255);
 }
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
+.order > p {
+  font-size: 30px;
 }
-
-/* Wrapper for item list */
-.bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
+.order > textarea {
+  padding: 10px;
+  font-size: 20px;
+  width: 50%;
+  margin: auto;
+  background-color: rgb(170, 188, 204);
 }
-
-/* Individual item */
-.bm-item {
-  display: inline-block;
+.close {
+  position: absolute;
+  right: 20px;
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  color: white;
+  font-size: 50px;
+  height: 60px;
+  width: 60px;
 }
-
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+.menu {
+  display: none;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px;
+}
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  margin-top: 200px;
+  background-color: rgb(139, 139, 139);
+  padding: 10px;
+}
+.menuLinks > a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+.menuLinks > button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: white;
+}
+.menuNone {
+  display: none;
 }
 
 @media (max-width: 1300px) {
   .links {
     display: none;
+  }
+  .menu {
+    display: block;
   }
 }
 
@@ -184,61 +215,37 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .tagline > h1 {
     font-size: 30px;
   }
-}
-
-.burger {
-  display: none;
+  .order > h1 {
+    margin-top: 70px;
+  }
+  .order > input {
+    width: 80%;
+  }
+  .order > textarea {
+    width: 80%;
+  }
+  .send {
+    width: 80%;
+  }
+  .order {
+    height: 600px;
+    margin-top: -600px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .burger {
-    display: block !important;
-  }
   .label {
     display: flex;
     flex-direction: column;
     width: 70px;
     cursor: pointer;
   }
-
-  .label .span {
-    background: black;
-    border-radius: 10px;
-    height: 4px;
-    margin: 5px 0;
-    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  .logo {
+    height: 70px;
+    width: 70px;
   }
 
-  .span:nth-of-type(1) {
-    width: 40%;
-    transform: rotatez(0deg) translate(0, 0) !important;
-  }
-
-  .span:nth-of-type(2) {
-    width: 80%;
-    transform: rotatez(-0deg) !important;
-  }
-
-  .span:nth-of-type(3) {
-    width: 55%;
-    transform: translate(90, -0) rotatez(0deg) !important;
-  }
-
-  .check[type="checkbox"] {
-    display: none;
-  }
-
-  .check[type="checkbox"]:checked ~ .span:nth-of-type(1) {
-    transform-origin: bottom;
-    width: 65%;
-  }
-
-  .check[type="checkbox"]:checked ~ .span:nth-of-type(2) {
-    transform-origin: top;
-    width: 50%;
-  }
-
-  .check[type="checkbox"]:checked ~ .span:nth-of-type(3) {
-    width: 70%;
+  header > a {
+    font-size: 30px;
   }
 }
