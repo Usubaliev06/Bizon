@@ -1,10 +1,10 @@
 import css from './Products.module.css'
 import img1 from '../../images/IMG_6856.JPG'
-import img2 from '../../images/beer2.jpg'
-import img3 from '../../images/beer2.jpg'
-import img4 from '../../images/IMG_2726.JPG'
+import img2 from '../../images/premium.JPG'
+import img3 from '../../images/IMG_6867.JPG'
+import img4 from '../../images/black.jpg'
 import img5 from '../../images/sidr.JPG'
-import img6 from '../../images/IMG_7146.JPG'
+import img6 from '../../images/IMG_6869.JPG'
 import price from '../../images/price.JPG'
 
 
@@ -45,7 +45,7 @@ const Products = () => {
     {
       title: 'Мелано',
       description: 'Цвет - янтарный, используется специальный солод карамельной обжарки, который дает сладкий привкус. Легкая горечь достигается с использованием американского сорта хмеля. OG 13%. ALC 5,0%.',
-      prise: '',
+      prise: '140 сом',
       image: img6
     },
   ]
