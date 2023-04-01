@@ -1,4 +1,4 @@
-
+import React from 'react';
 import Slider from "react-slick";
 import css from "./Main.module.css"
 import { NavLink } from 'react-router-dom'

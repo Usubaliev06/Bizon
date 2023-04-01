@@ -9,6 +9,7 @@
 //   Routes,
 //   Route,
 // } from "react-router-dom";
+import React from 'react';
 import { useState, useEffect } from 'react';
 import RoutesApp from '../src/RoutesApp'
 import Loader from './components/loader/Loader'
