@@ -126,9 +126,12 @@ header > a:hover {
   text-align: center;
   border-radius: 20px;
 }
-.order > h1 {
+.orderTitle {
   margin-top: 10px;
   color: white;
+}
+.orderTitleRed{
+  color: rgb(255, 0, 0);
 }
 .order > input {
   height: 20px;
@@ -287,7 +290,10 @@ font-size: 40px;
   .tagline > h1 {
     font-size: 30px;
   }
-  .order > h1 {
+  .orderTitle {
+    margin-top: 70px;
+  }
+  .orderTitleRed{
     margin-top: 70px;
   }
   .order > input {
@@ -303,9 +309,13 @@ font-size: 40px;
     height: 30px;
   }
 
-  .order > h1 {
+  .orderTitle{
     margin-top: 10px;
     font-size: 20px;
+  }
+  .orderTitleRed{
+    margin-top: 10px;
+    font-size: 30px;
   }
   .orderCardWrapper{
     width: 100%;

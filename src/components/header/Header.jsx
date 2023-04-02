@@ -1,10 +1,12 @@
 import css from "./Header.module.css";
-import React from 'react';
+import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../images/logo.JPG";
 import { useState } from "react";
+import { clear } from "@testing-library/user-event/dist/clear";
 
 const Header = () => {
+  const [orderTitle, setOrderTitle] = useState(css.orderTitle);
   const [orderWrapper, setOrderWrapper] = useState(css.orderNone);
   const [menu, setMenu] = useState(css.menu);
   const [menuLinks, setMenuLinks] = useState(css.menuNone);
@@ -78,13 +80,12 @@ const Header = () => {
   const handlePlus3 = () => {
     setCount3(count3 + 1);
     setFinallyPrice(finallyPrice + all[2].prise);
-  
   };
   const handleMinus3 = () => {
     if (count3 >= 1) {
-    setCount3(count3 - 1);
-    setFinallyPrice(finallyPrice - all[2].prise);
-  }
+      setCount3(count3 - 1);
+      setFinallyPrice(finallyPrice - all[2].prise);
+    }
   };
   const handlePlus4 = () => {
     setCount4(count4 + 1);
@@ -92,9 +93,9 @@ const Header = () => {
   };
   const handleMinus4 = () => {
     if (count4 >= 1) {
-    setCount4(count4 - 1);
-    setFinallyPrice(finallyPrice - all[3].prise);
-  }
+      setCount4(count4 - 1);
+      setFinallyPrice(finallyPrice - all[3].prise);
+    }
   };
   const handlePlus5 = () => {
     setCount5(count5 + 1);
@@ -102,19 +103,19 @@ const Header = () => {
   };
   const handleMinus5 = () => {
     if (count5 >= 1) {
-    setCount5(count5 - 1);
-    setFinallyPrice(finallyPrice - all[4].prise);
-  }
+      setCount5(count5 - 1);
+      setFinallyPrice(finallyPrice - all[4].prise);
+    }
   };
   const handlePlus6 = () => {
     setCount6(count6 + 1);
     setFinallyPrice(finallyPrice + all[5].prise);
   };
   const handleMinus6 = () => {
-  if (count6 >= 1) {
-    setCount6(count6 - 1);
-    setFinallyPrice(finallyPrice - all[5].prise);
-  }
+    if (count6 >= 1) {
+      setCount6(count6 - 1);
+      setFinallyPrice(finallyPrice - all[5].prise);
+    }
   };
 
   const orderData = {
@@ -180,8 +181,13 @@ const Header = () => {
   };
 
   const handleSend = () => {
-    setOrderWrapper(css.orderNone);
-    console.log(message);
+    if (name !== "" && phone !== "" && address !== "") {
+      window.location.href =
+        "https://api.whatsapp.com/send?phone=996505545479&text=${message}";
+        setOrderTitle(css.orderTitle);
+    } else {
+      setOrderTitle(css.orderTitleRed);
+    }
   };
 
   const handleMenu = () => {
@@ -246,7 +252,7 @@ const Header = () => {
           <button className={css.close2} onClick={handleOrderClose}>
             ✖
           </button>
-          <h1>Отправьте нам заявку</h1>
+          <h1 className={orderTitle}>Заполните все поля</h1>
           <input
             type="text"
             placeholder="ФИО"
@@ -285,12 +291,7 @@ const Header = () => {
 
           <p>Итог: {finallyPrice} сом</p>
 
-          <a
-            className={css.send}
-            onClick={handleSend}
-            target="blank"
-            href={`https://api.whatsapp.com/send?phone=996505545479&text=${message}`}
-          >
+          <a className={css.send} onClick={handleSend} target="blank">
             Отправить
           </a>
         </div>
