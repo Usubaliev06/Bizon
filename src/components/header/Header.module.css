@@ -305,6 +305,7 @@ font-size: 40px;
 
   .order > h1 {
     margin-top: 10px;
+    font-size: 20px;
   }
   .orderCardWrapper{
     width: 100%;
@@ -319,8 +320,13 @@ font-size: 40px;
     height: 30px;
     width: 30px;
     font-size: 30px;
-
     } 
+    .order>p{
+      font-size: 30px;
+    }
+    .order{
+      padding-bottom: 80px;
+    }
 
 }
 
