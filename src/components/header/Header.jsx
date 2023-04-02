@@ -291,9 +291,9 @@ const Header = () => {
 
           <p>Итог: {finallyPrice} сом</p>
 
-          <a className={css.send} onClick={handleSend} target="blank">
+          <button className={css.send} onClick={handleSend} >
             Отправить
-          </a>
+          </button>
         </div>
       </div>
     </>
