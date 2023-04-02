@@ -1,5 +1,5 @@
 import css from "./Header.module.css";
-import React from "react";
+import React, { useEffect } from "react";
 
 import { NavLink } from "react-router-dom";
 import logo from "../../images/logo.JPG";
@@ -9,6 +9,8 @@ const Header = () => {
   const [orderWrapper, setOrderWrapper] = useState(css.orderNone);
   const [menu, setMenu] = useState(css.menu);
   const [menuLinks, setMenuLinks] = useState(css.menuNone);
+
+  const [finallyPrice, setFinallyPrice] = useState(0);
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -25,45 +27,96 @@ const Header = () => {
     {
       title: "Pale Ale / Светлый Эль",
       count: count1,
+      prise: 140,
     },
     {
       title: "Black Ale / Темный Эль",
       count: count2,
+      prise: 140,
     },
     {
       title: "Red Ale / Красный эль",
       count: count3,
+      prise: 140,
     },
     {
       title: "Сидр",
       count: count4,
+      prise: 165,
     },
     {
       title: "Премиум",
       count: count5,
+      prise: 185,
     },
     {
       title: "Мелано",
       count: count6,
+      prise: 140,
     },
   ];
 
-
-
-  const handlePlus1 = () => setCount1(count1 + 1);
-  const handleMinus1 = () => setCount1(count1 - 1);
-  const handlePlus2 = () => setCount2(count2 + 1);
-  const handleMinus2 = () => setCount2(count2 - 1);
-  const handlePlus3 = () => setCount3(count3 + 1);
-  const handleMinus3 = () => setCount3(count3 - 1);
-  const handlePlus4 = () => setCount4(count4 + 1);
-  const handleMinus4 = () => setCount4(count4 - 1);
-  const handlePlus5 = () => setCount5(count5 + 1);
-  const handleMinus5 = () => setCount5(count5 - 1);
-  const handlePlus6 = () => setCount6(count6 + 1);
-  const handleMinus6 = () => setCount6(count6 - 1);
-
-
+  const handlePlus1 = () => {
+    setCount1(count1 + 1);
+    setFinallyPrice(finallyPrice + all[0].prise);
+  };
+  const handleMinus1 = () => {
+    if (count1 >= 1) {
+      setCount1(count1 - 1);
+      setFinallyPrice(finallyPrice - all[0].prise);
+    }
+  };
+  const handlePlus2 = () => {
+    setCount2(count2 + 1);
+    setFinallyPrice(finallyPrice + all[1].prise);
+  };
+  const handleMinus2 = () => {
+    if (count2 >= 1) {
+      setCount2(count2 - 1);
+      setFinallyPrice(finallyPrice - all[1].prise);
+    }
+  };
+  const handlePlus3 = () => {
+    setCount3(count3 + 1);
+    setFinallyPrice(finallyPrice + all[2].prise);
+  
+  };
+  const handleMinus3 = () => {
+    if (count3 >= 1) {
+    setCount3(count3 - 1);
+    setFinallyPrice(finallyPrice - all[2].prise);
+  }
+  };
+  const handlePlus4 = () => {
+    setCount4(count4 + 1);
+    setFinallyPrice(finallyPrice + all[3].prise);
+  };
+  const handleMinus4 = () => {
+    if (count4 >= 1) {
+    setCount4(count4 - 1);
+    setFinallyPrice(finallyPrice - all[3].prise);
+  }
+  };
+  const handlePlus5 = () => {
+    setCount5(count5 + 1);
+    setFinallyPrice(finallyPrice + all[4].prise);
+  };
+  const handleMinus5 = () => {
+    if (count5 >= 1) {
+    setCount5(count5 - 1);
+    setFinallyPrice(finallyPrice - all[4].prise);
+  }
+  };
+  const handlePlus6 = () => {
+    setCount6(count6 + 1);
+    setFinallyPrice(finallyPrice + all[5].prise);
+  };
+  const handleMinus6 = () => {
+  if (count6 >= 1) {
+    setCount6(count6 - 1);
+    setFinallyPrice(finallyPrice - all[5].prise);
+  }
+  };
 
   const orderData = {
     name,
@@ -116,8 +169,8 @@ const Header = () => {
     }
     return acc;
   }, "");
-  
-  const message = `Доброго времени суток меня зовут ${orderData.name}, мой номер телефона ${orderData.phone}, я хочу заказать ${orderDetails} по адресу ${orderData.address}.`;
+
+  const message = `Доброго времени суток меня зовут ${orderData.name}, мой номер телефона ${orderData.phone}, я хочу заказать ${orderDetails} по адресу ${orderData.address}, общая сумма заказа ${finallyPrice} сом`;
 
   const handleOrder = () => {
     setOrderWrapper(css.orderWrapper);
@@ -218,25 +271,20 @@ const Header = () => {
 
           <div className={css.orderCardWrapper}>
             {productsList.map((product, index) => {
-              // const [count, setCount] = useState(0);
-              // const handlePlus = () => {
-              //   setCount(count+=1)
-              // };
-              // const handleMinus = () => {
-              //   setCount(count-=1)
-              // };
               return (
                 <div key={index} className={css.orderCard}>
                   <h2>{product.title}</h2>
                   <div className={css.orderCounter}>
-                    <button onClick={product.plus}>+</button>
-                    <p>{product.count}л</p>
                     <button onClick={product.minus}>-</button>
+                    <p>{product.count}л.</p>
+                    <button onClick={product.plus}>+</button>
                   </div>
                 </div>
               );
             })}
           </div>
+
+          <p>Итог: {finallyPrice} сом</p>
 
           <a
             className={css.send}
