@@ -230,7 +230,7 @@ const Header = () => {
                   <h2>{product.title}</h2>
                   <div className={css.orderCounter}>
                     <button onClick={product.plus}>+</button>
-                    <p>{product.count}</p>
+                    <p>{product.count}л</p>
                     <button onClick={product.minus}>-</button>
                   </div>
                 </div>
