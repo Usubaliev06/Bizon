@@ -1,28 +1,28 @@
-import React from 'react';
+import React from "react";
 import Slider from "react-slick";
-import css from "./Main.module.css"
-import { NavLink } from 'react-router-dom'
-import video from '../../images/IMG_4325.MP4'
-
+import css from "./Main.module.css";
+import { NavLink } from "react-router-dom";
+import video from "../../images/IMG_4325.MP4";
 
 const Main = () => {
-
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
-  }
+    slidesToScroll: 1,
+  };
 
- return (
+  return (
     <div className={css.mainWrapper}>
-
       <main>
         <div className={css.create}>
-          <h1>Как мы создаем крафтовое пиво</h1>
-          <p>Наше пиво называется крафтовым, так как мы стараемся экспериментировать во всем - в рецептурах, технолог</p>
-          <NavLink to='/products'>Наше пиво</NavLink>
+          <h1>Наше пиво</h1>
+          <p>
+            Крафтовое пиво Бизон- это настоящий кулинарный опыт, который вы
+            обязательно должны попробовать.
+          </p>
+          <NavLink to="/products">Наше пиво</NavLink>
         </div>
 
         <div className={css.sliderWrapper}>
@@ -33,11 +33,17 @@ const Main = () => {
             </div>
             <div className={css.card} id={css.card2Bac}>
               <h3>АВТОРСКАЯ РЕЦЕПТУРА</h3>
-              <p>Мы чтим пивоварские традиции, но любим создавать что-то свое, индивидуальное</p>
+              <p>
+                Мы чтим пивоварские традиции, но любим создавать что-то свое,
+                индивидуальное
+              </p>
             </div>
             <div className={css.card} id={css.card3Bac}>
               <h3>СОВРЕМЕННОЕ ОБОРУДОВАНИЕ</h3>
-              <p>Наше мини-производство открывает широкие горизонты для различных экспериментов</p>
+              <p>
+                Наше мини-производство открывает широкие горизонты для различных
+                экспериментов
+              </p>
             </div>
             <div className={css.card} id={css.card4Bac}>
               <h3>УНИКАЛЬНЫЙ АСОРТИМЕНТ</h3>
@@ -49,14 +55,9 @@ const Main = () => {
         <div className={css.video}>
           <video src={video} controls></video>
         </div>
-
-
-      </main >
-
-
-
-    </div >
+      </main>
+    </div>
   );
-}
+};
 
 export default Main;

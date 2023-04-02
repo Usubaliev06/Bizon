@@ -165,7 +165,7 @@ const Header = () => {
 
   const orderDetails = all.reduce((acc, item) => {
     if (item.count > 0) {
-      acc += ` ${item.count} литров сорта ${item.title}, `;
+      acc += ` ${item.count} лит. сорта ${item.title}, `;
     }
     return acc;
   }, "");
