@@ -3,7 +3,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../images/logo.JPG";
 import { useState } from "react";
-import { clear } from "@testing-library/user-event/dist/clear";
+
 
 const Header = () => {
   const [orderTitle, setOrderTitle] = useState(css.orderTitle);
@@ -183,7 +183,7 @@ const Header = () => {
   const handleSend = () => {
     if (name !== "" && phone !== "" && address !== "") {
       window.location.href =
-        "https://api.whatsapp.com/send?phone=996505545479&text=${message}";
+        `https://api.whatsapp.com/send?phone=996505545479&text=${message}`;
         setOrderTitle(css.orderTitle);
     } else {
       setOrderTitle(css.orderTitleRed);
