@@ -17,7 +17,7 @@ const Main = () => {
     <div className={css.mainWrapper}>
       <main>
         <div className={css.create}>
-          <h1>Наше пиво</h1>
+          <h1>О пиве</h1>
           <p>
             Крафтовое пиво Бизон- это настоящий кулинарный опыт, который вы
             обязательно должны попробовать.
