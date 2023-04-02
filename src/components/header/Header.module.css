@@ -19,7 +19,7 @@ header {
     rgba(0, 0, 0, 1) 65%
   );
   height: 200px;
-}
+} 
 
 header > a {
   color: white;
@@ -102,26 +102,36 @@ header > a:hover {
 .orderNone {
   display: none;
 }
-.order {
+.orderWrapper {
+  height: 100vh;
+  width: 100%;
   position: sticky;
-  top: 300px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.486);
+  margin-top: -100vh;
+  z-index: 100;
+  padding-top: 20px;
+}
+.order {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: grey;
+  background-color: rgb(34, 34, 34);
   padding: 15px;
   width: 90%;
   margin: auto;
-  height: 500px;
-  margin-top: -500px;
+  height: 95vh;
+  max-height:1000px;
   text-align: center;
-  z-index: 100;
+  border-radius: 20px;
 }
 .order > h1 {
-  margin-top: 20px;
+  margin-top: 10px;
+  color: white;
 }
 .order > input {
-  height: 40px;
+  height: 20px;
   width: 50%;
   border-radius: 5px;
   border: none;
@@ -130,47 +140,95 @@ header > a:hover {
   background-color: rgb(170, 188, 204);
 }
 .send {
-  height: 60px;
+  height: 40px;
   width: 300px;
   margin: auto;
   font-size: 20px;
   color: rgb(255, 255, 255);
   border-radius: 5px;
   background-color: rgb(110, 51, 33);
-  padding-top: 18px;
   text-decoration: none;
+  padding: 10px;
 }
 .send:hover {
   color: rgb(110, 51, 33);
-
   background-color: rgb(255, 255, 255);
 }
 .order > p {
   font-size: 30px;
+  color: white;
 }
-.order > textarea {
-  padding: 10px;
-  font-size: 20px;
-  width: 50%;
+/* //////////////////////////////////// */
+.orderCardWrapper{
+  width: 80%;
   margin: auto;
-  background-color: rgb(170, 188, 204);
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.close {
+.orderCard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* gap: 20px; */
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  width: 100%;
+}
+.orderCard>h2{
+color: white;
+margin-right: auto;
+font-size: 20px;
+}
+.orderCounter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 40px;
+}
+.orderCounter>p{
+color: white;
+font-size: 40px;
+}
+.orderCounter>button{
+  height: 40px;
+  width: 40px;
+  font-size: 40px;
+  color: white;
+  border: none;
+  background-color: rgb(24, 24, 24);
+  } 
+.orderCounter>button:active{
+  color:rgb(24, 24, 24) ;
+  background-color:white;
+}
+.close2 {
   position: absolute;
-  right: 20px;
+  right: 0;
+  top: 0;
   background-color: rgba(255, 0, 0, 0);
   border: none;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   height: 60px;
   width: 60px;
 }
+::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+   font-size: 15px;
+}
+/* //////////////////////////////////////////////////////////////// */
 .menu {
   display: none;
   font-size: 20px;
   background-color: rgb(255, 255, 255);
+  color: black;
   border: none;
   padding: 5px;
+  border-radius: 20px;
 }
 .menuLinks {
   display: flex;
@@ -180,16 +238,29 @@ header > a:hover {
   margin-top: 200px;
   background-color: rgb(139, 139, 139);
   padding: 10px;
+  border-radius: 20px;
+}
+.closeMenu {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 0 0 0 5px;
+  margin: 0 auto 0 auto;
 }
 .menuLinks > a {
   text-decoration: none;
   color: white;
   padding: 5px;
+  font-size: 20px;
 }
 .menuLinks > button {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   color: white;
+  font-size: 20px;
+  text-align: left;
+  padding: 0 0 0 5px;
 }
 .menuNone {
   display: none;
@@ -222,17 +293,32 @@ header > a:hover {
   .order > input {
     width: 80%;
   }
-  .order > textarea {
-    width: 80%;
-  }
+
   .send {
     width: 80%;
   }
-  .order {
-    height: 600px;
-    margin-top: -600px;
-    top: 100px;
+  .close2{
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
   }
+
+  .order > h1 {
+    margin-top: 10px;
+  }
+  .orderCardWrapper{
+    width: 100%;
+  }
+  .orderCard>h2{
+    font-size: 15px;
+    }
+  .orderCounter>button{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+
+    } 
+
 }
 
 @media screen and (max-width: 768px) {
@@ -250,11 +336,17 @@ header > a:hover {
   header > a {
     font-size: 30px;
   }
+
+  header {
+    height: 100px;
+  }
+  .order > input {
+    width: 80%;
+  }
+  .close {
   
-header {
-  height: 100px;
-}
-.order{
-  top: 100px;
-}
+    right: 50px;
+  
+  }
+
 }
